@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكتب</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <h1>قائمة الكتب</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>رمز الكتاب</th>
+                        <th>العنوان</th>
+                        <th>السعر</th>
+                        <th>إظهار التفاصيل</th>
+                        <th>إضافة إلى السلة</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                    <tr>
+                        <td>978-0451524935</td>
+                        <td>1984</td>
+                        <td>20000 ل.س</td>
+                        <td><button class="details-btn"></button></td>
+                        <td><button class="add-to-cart" data-id="978-0451524935" data-title="1984" data-price="20000">إضافة إلى سلة الشراء</button></td>
+                    </tr>
+                    <tr class="details hidden">
+                        <td colspan="5">
+                            <img src="images\1984.jpeg" alt="1984" style="width: 100px; height: auto;"><br>
+                            <strong>الناشر:</strong> هاربر كولينز <br>
+                            <strong>تصنيف:</strong> رواية د dystopian <br>
+                            <strong>ملخص:</strong> رواية سياسية عن نظام استبدادي يراقب كل شيء في حياة المواطنين.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>978-0743273565</td>
+                        <td>The Great Gatsby</td>
+                        <td>18000 ل.س</td>
+                        <td><button type="checkbox"
+                             class="details-btn" 
+                            ></button></td>
+                        <td><button class="add-to-cart" data-id="978-0743273565" data-title="The Great Gatsby" data-price="18000">إضافة إلى سلة الشراء</button></td>
+                    </tr>
+                    <tr class="details hidden">
+                        <td colspan="5">
+                            <img src="images\The Great Gatsby.jpeg" alt="The Great Gatsby" style="width: 100px; height: auto;"><br>
+                            <strong>الناشر:</strong> Scribner <br>
+                            <strong>تصنيف:</strong> رواية <br>
+                            <strong>ملخص:</strong> قصة عن الحياة الأمريكية في العشرينات ورغبة الشخص في تحقيق النجاح.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>978-0439023528</td>
+                        <td>The Hunger Games</td>
+                        <td>22000 ل.س</td>
+                        <td><button class="details-btn"></button></td>
+                        <td><button class="add-to-cart" data-id="978-0439023528" data-title="The Hunger Games" data-price="22000">إضافة إلى سلة الشراء</button></td>
+                    </tr>
+                    <tr class="details hidden">
+                        <td colspan="5">
+                            <img src="images\The Hunger Games.jpeg" alt="The Hunger Games" style="width: 100px; height: auto;"><br>
+                            <strong>الناشر:</strong> Scholastic Press <br>
+                            <strong>تصنيف:</strong> خيال علمي، مغامرة <br>
+                            <strong>ملخص:</strong> رواية عن مسابقة مميتة في عالم مستقبلي حيث يقتل الأطفال بعضهم البعض للبقاء على قيد الحياة.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>978-9770917544</td>
+                        <td>في قلب الليل</td>
+                        <td>23000 ل.س</td>
+                        <td><button class="details-btn"></button></td>
+                        <td><button class="add-to-cart" data-id="978-9770917544" data-title="في قلب الليل" data-price="23000">إضافة إلى سلة الشراء</button></td>
+                    </tr>
+                    <tr class="details hidden">
+                        <td colspan="5">
+                            <img src="images\في قلب الليل.jpeg" alt="في قلب الليل" style="width: 100px; height: auto;"><br>
+                            <strong>الناشر:</strong> دار نشر الأهرام <br>
+                            <strong>تصنيف:</strong> رواية اجتماعية <br>
+                            <strong>ملخص:</strong> رواية تسلط الضوء على قضايا الإنسان في المجتمع المعاصر وتفاعلاته في الليل.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>978-9770916790</td>
+                        <td>الرجل الذي حسب زوجته قبعة</td>
+                        <td>26000 ل.س</td>
+                        <td><button class="details-btn"></button></td>
+                        <td><button class="add-to-cart" data-id="978-9770916790" data-title="الرجل الذي حسب زوجته قبعة" data-price="26000">إضافة إلى سلة الشراء</button></td>
+                    </tr>
+                    <tr class="details hidden">
+                        <td colspan="5">
+                            <img src="images\الرجل الذي حسب زوجته قبعة.jpeg" alt="الرجل الذي حسب زوجته قبعة" style="width: 100px; height: auto;"><br>
+                            <strong>الناشر:</strong> دار الشروق <br>
+                            <strong>تصنيف:</strong> أدب علمي <br>
+                            <strong>ملخص:</strong> قصة عن مرض طبي غريب يؤثر على الشخصيات في الرواية.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978-9770916738</td>
+                        <td>ألف ليلة وليلة</td>
+                        <td>25000 ل.س</td>
+                        <td><button class="details-btn"></button></td>
+                        <td><button class="add-to-cart" data-id="978-9770916738" data-title="ألف ليلة وليلة" data-price="25000">إضافة إلى سلة الشراء</button></td>
+                    </tr>
+                    <tr class="details hidden">
+                        <td colspan="5">
+                            <img src="images\ألف ليلة وليلة.jpeg" alt="ألف ليلة وليلة" style="width: 100px; height: auto;"><br>
+                            <strong>الناشر:</strong> دار المعارف <br>
+                            <strong>تصنيف:</strong> قصص شعبية <br>
+                            <strong>ملخص:</strong> مجموعة من القصص الشعبية من الشرق الأوسط وشمال إفريقيا.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978-0452295297</td>
+                        <td>To Kill a Mockingbird</td>
+                        <td>24000 ل.س</td>
+                        <td><button class="details-btn"></button></td>
+                        <td><button class="add-to-cart" data-id="978-0452295297" data-title="To Kill a Mockingbird" data-price="24000">إضافة إلى سلة الشراء</button></td>
+                    </tr>
+                    <tr class="details hidden">
+                        <td colspan="5">
+                            <img src="images\To Kill a Mockingbird.png" alt="To Kill a Mockingbird" style="width: 100px; height: auto;"><br>
+                            <strong>الناشر:</strong> Harper Perennial Modern Classics <br>
+                            <strong>تصنيف:</strong> رواية درامية <br>
+                            <strong>ملخص:</strong> قصة عن العنصرية في أمريكا الجنوبية خلال الثلاثينيات وحقوق الإنسان.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>978-0451526342</td>
+                        <td>Brave New World</td>
+                        <td>21000 ل.س</td>
+                        <td><button class="details-btn"></button></td>
+                        <td><button class="add-to-cart" data-id="978-0451526342" data-title="Brave New World" data-price="21000">إضافة إلى سلة الشراء</button></td>
+                    </tr>
+                    <tr class="details hidden">
+                        <td colspan="5">
+                            <img src="images\Brave New World.jpeg" alt="Brave New World" style="width: 100px; height: auto;"><br>
+                            <strong>الناشر:</strong> HarperCollins <br>
+                            <strong>تصنيف:</strong> dystopian، خيال علمي <br>
+                            <strong>ملخص:</strong> رواية تتناول مجتمعًا مستقبليًا يتم فيه قمع الحرية الفردية.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p style="text-align: center; font-family: 'Arial', sans-serif; color: #555; font-size: 14px;">
+            &copy; <span id="currentYear"></span> مكتبة الإبداع الرقمي. جميع الحقوق محفوظة. <br>
+            <span style="font-size: 12px; color: #999;">تم تطوير هذا الموقع وفقًا لأحدث معايير الجودة التقنية.</span>
+        </p>
+
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+        </script>
+
+
+    </footer>
+
+</body>
+
+</html>
